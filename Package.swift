@@ -40,7 +40,10 @@ let package = Package(
                 .target(name: "AcuantImagePreparation")
             ],
             path: "AcuantFaceCapture/AcuantFaceCapture",
-            publicHeadersPath: "AcuantFaceCapture.h"
+            publicHeadersPath: "AcuantFaceCapture.h",
+            cSettings: [
+                .headerSearchPath("AcuantFaceCapture/AcuantFaceCapture/AcuantFaceCapture.h")
+            ]
         ),
         .target(
             name: "AcuantCamera",
@@ -51,6 +54,9 @@ let package = Package(
             path: "AcuantCamera/AcuantCamera",
             resources: [.process("Media.xcassets")],
             publicHeadersPath: "AcuantCamera.h",
+            cSettings: [
+                .headerSearchPath("AcuantCamera/AcuantCamera/AcuantCamera.h")
+            ],
             linkerSettings: [
                 .linkedLibrary("c++"),
                 .linkedLibrary("z"),
