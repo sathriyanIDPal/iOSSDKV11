@@ -53,9 +53,9 @@ let package = Package(
             ],
             path: "AcuantCamera/AcuantCamera",
             resources: [.process("Media.xcassets")],
-            publicHeadersPath: "AcuantCamera.h",
+            publicHeadersPath: "include",
             cSettings: [
-                .headerSearchPath("AcuantCamera/AcuantCamera/AcuantCamera.h")
+                .headerSearchPath(".")
             ],
             linkerSettings: [
                 .linkedLibrary("c++"),
