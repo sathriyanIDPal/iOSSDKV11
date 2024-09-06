@@ -43,6 +43,12 @@ let package = Package(
             publicHeadersPath: "AcuantFaceCapture.h",
             cSettings: [
                 .headerSearchPath("AcuantFaceCapture/AcuantFaceCapture/AcuantFaceCapture.h")
+            ],
+            swiftSettings: [
+                .unsafeFlags([
+                    "-enable-library-evolution",
+                    "-emit-module-interface"
+                ])
             ]
         ),
         .target(
@@ -56,6 +62,12 @@ let package = Package(
             publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath(".")
+            ],
+            swiftSettings: [
+                .unsafeFlags([
+                    "-enable-library-evolution",
+                    "-emit-module-interface"
+                ])
             ],
             linkerSettings: [
                 .linkedLibrary("c++"),
