@@ -8,6 +8,7 @@
 
 import Foundation
 import AVFoundation
+import UIKit
 
 @objcMembers public class CameraCaptureSession: AVCaptureSession {
     let sessionQueue: DispatchQueue
