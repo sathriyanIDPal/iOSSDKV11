@@ -7,6 +7,7 @@
 //
 
 import AcuantCommon
+import Foundation
 
 @objc public protocol DocumentCameraViewControllerDelegate {
     func onCaptured(image: Image, barcodeString: String?)

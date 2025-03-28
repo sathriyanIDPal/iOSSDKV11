@@ -1,7 +1,0 @@
-module libtesseract [system] {
-    link "tesseract"
-    link "lept"
-    umbrella header "libtesseract-umbrella.h"
-    export *
-    module * { export * }
-}
